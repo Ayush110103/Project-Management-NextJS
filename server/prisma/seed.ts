@@ -1,4 +1,7 @@
+import { config } from 'dotenv';
 import { PrismaClient } from "@prisma/client";
+config();
+
 import fs from "fs";
 import path from "path";
 const prisma = new PrismaClient();
